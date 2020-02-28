@@ -14,22 +14,29 @@
     <title>About - BitDocs</title>
     
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="../css/base.min.css" rel="stylesheet">
     <link href="../css/cinder.min.css" rel="stylesheet">
-
-    
+    <link href="../css/highlight.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
     
 
@@ -98,7 +105,7 @@
                         
                             
 <li >
-    <a href="../powerbits/">Power</a>
+    <a href="../power/">Power</a>
 </li>
 
                         
@@ -120,7 +127,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../powerbits/">
+                        <a rel="next" href="../power/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
@@ -146,6 +153,8 @@
 
 <h1 id="about">About</h1>
 <p>This website was created to educate people about the functionality and use of the littleBits components.</p>
+<p>If you need any help, email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#98;&#105;&#116;&#100;&#111;&#99;&#115;&#46;&#109;&#108;">&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#98;&#105;&#116;&#100;&#111;&#99;&#115;&#46;&#109;&#108;</a>.</p>
+<p>This site was made by <a href="mailto:calum@bitdocs.ml">Calum Dingwall</a> and <a href="mailto:sean@bitdocs.ml">Sean Maizel</a>.</p>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>We do not own any of the products presented in this website, nor are we associated with Sphero Inc. This website was created solely for education purposes. All rights are reserved to Sphero Inc. No profit is being made on this website, and we don't plan to ever have ads on this site.</p></div>
         
@@ -156,17 +165,17 @@
         
         <hr>
         <p>
-        <small>Made by Sean Maizel and Calum Dingwall</small><br>
+        <small>Made by Sean Maizel and Calum Dingwall<br></small>
         
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
-    
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
@@ -176,11 +185,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>
