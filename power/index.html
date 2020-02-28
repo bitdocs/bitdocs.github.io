@@ -14,14 +14,16 @@
     <title>Power - BitDocs</title>
     
 
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="../css/base.min.css" rel="stylesheet">
     <link href="../css/cinder.min.css" rel="stylesheet">
-    <link href="../css/highlight.min.css" rel="stylesheet">
+
+    
     <link href="../css/colors.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,15 +31,6 @@
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
-
-    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-    WebFont.load({
-        google: {
-            families: ['Open Sans', 'PT Sans']
-        }
-    });
-    </script>
 
     
 
@@ -163,9 +156,9 @@
 <p>You must have one power bit for your circuit to function, as without one of these bits, power can not be delivered to the other bits.</p>
 <h2 id="power">Power</h2>
 <p><img alt="Power Bit" src="https://i.shgcdn.com/c023f827-c3fd-401e-b7f7-8c7522c5382f/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit is the most basic in this category, as it only requires one 9V battery. This will be the most common, as the small battery makes your circuits very portable.</p>
+<p>This bit is the most basic in this category, as it only requires one <a href="./placeholder">9V battery</a>. This will be the most common, as the small battery makes your circuits very portable.</p>
 <h3 id="how-to-use">How to Use</h3>
-<p>To use the power bit, you need two things, a <a href="placeholder">9V battery</a> and a 9V battery <a href="placeholder">clip connector</a>.</p>
+<p>To use the power bit, you need two things, a <a href="./placeholder">9V battery</a> and a 9V battery <a href="./placeholder">clip connector</a>.</p>
 <p>Instructions:</p>
 <ol>
 <li>Attach the clip connector to the battery.</li>
@@ -179,12 +172,12 @@
 </ul>
 <h2 id="usb-power">USB Power</h2>
 <p><img alt="USB Power Bit" src="https://i.shgcdn.com/b263983b-0279-4d40-b0a2-0e4d601d8ec7/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit is very similar to the normal <a href="#power">power</a> bit, though instead of using a <a href="placeholder">9V battery</a> and <a href="placeholder">clip converter</a>, it has a Micro-USB connection that is used to supply power.</p>
+<p>This bit is very similar to the normal <a href="#power">power</a> bit, though instead of using a <a href="./placeholder">9V battery</a> and <a href="./placeholder">clip converter</a>, it has a <a href="./placeholder">Micro-USB</a> connection that is used to supply power.</p>
 <h3 id="how-to-use_1">How to Use</h3>
-<p>To use this module, you need a power source that has a USB output (computer, battery bank, etc.), and a Micro-USB cable.</p>
+<p>To use this module, you need a power source that has a USB output (computer, battery bank, etc.), and a <a href="./placeholder">Micro-USB cable</a>.</p>
 <p>Instructions:</p>
 <ol>
-<li>Use a Micro-USB cable to plug the bit into a computer, battery bank, or other device capable of outputting power.</li>
+<li>Use a <a href="./placeholder">Micro-USB cable</a> to plug the bit into a computer, battery bank, or other device capable of outputting power.</li>
 <li>Connect the bit to your circuit, which immediatley powers it on.</li>
 </ol>
 <h3 id="other-info_1">Other Info</h3>
@@ -200,17 +193,17 @@
         
         <hr>
         <p>
-        <small>Made by Sean Maizel and Calum Dingwall<br></small>
+        <small>Made by Sean Maizel and Calum Dingwall</small><br>
         
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+        </p>
 
         
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
-    <script src="../js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
@@ -220,8 +213,11 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>
