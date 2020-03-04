@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A documentation for the Little Bits electronic components.">
     <meta name="author" content="Sean Maizel and Calum Dingwall">
-    <link rel="canonical" href="https://bitdocs.ml/about/">
+    <link rel="canonical" href="https://bitdocs.ml/output-md/">
     <link rel="../img/favicon.ico">
 
     
-    <title>About - BitDocs</title>
+    <title>Movement and Display - BitDocs</title>
     
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -94,13 +94,13 @@
                 
                 
                 
-                    <li class="active">
-                        <a href="./">About</a>
+                    <li >
+                        <a href="../about/">About</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules (Bits) <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -134,8 +134,8 @@
 
         
             
-<li >
-    <a href="../output-md/">Movement and Display</a>
+<li class="active">
+    <a href="./">Movement and Display</a>
 </li>
 
         
@@ -156,17 +156,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="..">
+                        <a rel="prev" href="../output-ls/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li >
-                        <a rel="next" href="../power/">
+                    <li class="disabled">
+                        <a rel="next" >
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/about.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/output-md.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -178,19 +178,64 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#about">About</a></li>
-            <li class="second-level"><a href="#disclaimer">Disclaimer</a></li>
+        <li class="first-level active"><a href="#output-bits-movement-and-display">Output Bits (Movement and Display)</a></li>
+            <li class="second-level"><a href="#dc-motor">DC Motor</a></li>
                 
+                <li class="third-level"><a href="#how-to-use">How to Use</a></li>
+            <li class="second-level"><a href="#vibration-motor">Vibration Motor</a></li>
+                
+            <li class="second-level"><a href="#fan">Fan</a></li>
+                
+            <li class="second-level"><a href="#servo">Servo</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_1">How to Use</a></li>
+            <li class="second-level"><a href="#number">Number</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_2">How to Use</a></li>
+            <li class="second-level"><a href="#bargraph">Bargraph</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_3">How to Use</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="about">About</h1>
-<p>This website was created to educate people about the functionality and use of the littleBits components.</p>
-<p>If you need any help, email us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#98;&#105;&#116;&#100;&#111;&#99;&#115;&#46;&#109;&#108;">&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#98;&#105;&#116;&#100;&#111;&#99;&#115;&#46;&#109;&#108;</a>.</p>
-<p>This site was made by <a href="mailto:calum@bitdocs.ml">Calum Dingwall</a> and <a href="mailto:sean@bitdocs.ml">Sean Maizel</a>.</p>
-<h2 id="disclaimer">Disclaimer</h2>
-<p>We do not own any of the products presented in this website, nor are we associated with Sphero Inc. This website was created solely for education purposes. All rights are reserved to Sphero Inc. No profit is being made on this website, and we don't plan to ever have ads on this site.</p></div>
+<h1 id="output-bits-movement-and-display">Output Bits (Movement and Display)</h1>
+<p>These are the bits that output something, whether it be a light, some type of signal, a sound, or something else.</p>
+<p>These bits actually do the work, as with just <a href="/placeholder">input</a> and <a href="/placeholder">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
+<p>All of these bits also pass electricity along, so connecting another bit to the end of an output will continue your device. This means you can have as many <a href="#buzzer">buzzers</a>, <a href="/placeholder">speakers</a>, and other noise making bits as you want! (Though we advise against this.)</p>
+<p>This section is all about the bits that have moving parts or display data.</p>
+<h2 id="dc-motor">DC Motor</h2>
+<p><img alt="DC Motor Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/DC_Motor_d_top_1512x.jpg?v=1571439468" /></p>
+<p>The DC motor is a simple motor that can be controlled to run either clockwise, counter-clockwise, or vary in speed and direction by the amount of power given.</p>
+<h3 id="how-to-use">How to Use</h3>
+<p>The DC motor has three different settings, cw (clockwise), ccw (counter-clockwise), and var (variable). While the clockwise and counter-clockwise settings are self-explanitory, the variable setting can be a bit tricky. The variable setting is controlled via the amount of power going through. Try it out by using a <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> with this bit.</p>
+<p>The <a href="/placeholder">wheel</a> included with some kits can be attached to the motor to create an electric-powered wheel.</p>
+<h2 id="vibration-motor">Vibration Motor</h2>
+<p><img alt="Vibration Motor Bit" src="https://i.shgcdn.com/9a0f7dbb-b884-40a3-93c0-ab3685f9435d/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The vibration motor is very simple, just like most other output bits. When power is recieved, the metal disc connected to the main bit via the wire will begin to vibrate.</p>
+<h2 id="fan">Fan</h2>
+<p><img alt="Fan Bit" src="https://i.shgcdn.com/ef1a70fd-e06a-4fd2-b89b-babc0a3548d1/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>When the fan bit recieves power, the fan connected to the bit will begin to spin.</p>
+<h2 id="servo">Servo</h2>
+<p><img alt="Servo Bit" src="https://i.shgcdn.com/26dca3cf-b741-44dc-9851-d0b6f8ab8020/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The servo bit is similar to the <a href="#dc-motor">DC motor</a> bit, though is much more specialized and controllable.</p>
+<h3 id="how-to-use_1">How to Use</h3>
+<p>The servo bit has two different settings. the TURN mode adjusts the position of the servo based on the signal it's recieving. In simpler terms, when in TURN mode, the servo can be controlled via a <a href="/placeholder">dimmer</a>, <a href="/placeholder">slide dimmer</a>, or any other bit that controls the amount of power.</p>
+<p>The SWING setting will have the servo move back and forth on its own. The speed of the servo in this mode can be slowed by lowering the power with a <a href="/placeholder">dimmer</a>.</p>
+<h2 id="number">Number</h2>
+<p><img alt="Number Bit" src="https://i.shgcdn.com/6fdac1e9-13ca-4869-b089-e70ae159ba33/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The number bit has two seven-segment number displays that display different numbers based on four different settings.</p>
+<h3 id="how-to-use_2">How to Use</h3>
+<p>This bit has four different settings for counting. Those settings are up, down, voltage, and value. Up and down are in the couny category, while voltage and value are in the read category.</p>
+<p>For the count category, both up and down count up and down respectively when they recieve a signal. This bit will <strong>NOT</strong> count up or down continuously if there is continuous power delivered, it will only occur when a new signal is recieved.
+For example, attaching a <a href="/placeholder">button</a> before this bit will increase the count every time the button is pressed, because the bit is recieving a new signal. If this sounds confusing, play with it a little bit, and you'll get it eventually.</p>
+<p>For the read category, the bit will, no surprise, read the voltage and value of the current signal. If you attach this bit directly to the power on a read mode, it will read 5.0 on voltage mode, and 99 on value mode.
+You can use a <a href="/placeholder">dimmer</a> to control the voltage and value. Both scale similarly to each other. The voltage ranges from 0 (no power) to 5.0 (full power), and the value ranges from 0 (no power) to 99 (full power).</p>
+<h2 id="bargraph">Bargraph</h2>
+<p><img alt="Bargraph Bit" src="https://i.shgcdn.com/8a84cbad-787b-4535-8acc-14e7575455fc/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The bargraph bit is similar to the <a href="#number">number</a> bit's voltage read mode, but displays the information in a different way.</p>
+<h3 id="how-to-use_3">How to Use</h3>
+<p>The bit only has one setting, and that is to read the voltage of the current signal. Since the normal power is 5V, if this bit is plugged directly into the power, it will read all the way up to five. However, using something like a <a href="/placeholder">dimmer</a> to control power, you can lower the voltage of the current signal. At 1V, the bit will read to 1, at 2V, the bit will read to 2, and that continues up to five.</p></div>
         
         
     </div>
