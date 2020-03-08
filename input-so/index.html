@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A documentation for the Little Bits electronic components.">
     <meta name="author" content="Sean Maizel and Calum Dingwall">
-    <link rel="canonical" href="https://bitdocs.ml/output-ls/">
+    <link rel="canonical" href="https://bitdocs.ml/input-so/">
     <link rel="../img/favicon.ico">
 
     
-    <title>Lights and Sound - BitDocs</title>
+    <title>Sound - BitDocs</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -109,8 +109,8 @@
     <ul class="dropdown-menu">
         
             
-<li >
-    <a href="../input-so/">Sound</a>
+<li class="active">
+    <a href="./">Sound</a>
 </li>
 
         
@@ -163,8 +163,8 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Lights and Sound</a>
+<li >
+    <a href="../output-ls/">Lights and Sound</a>
 </li>
 
         
@@ -197,17 +197,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../wire-i/">
+                        <a rel="prev" href="../power/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../output-md/">
+                        <a rel="next" href="../input-sw/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/output-ls.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/input-so.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -219,90 +219,96 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#output-bits-lights-and-sound">Output Bits (Lights and Sound)</a></li>
-            <li class="second-level"><a href="#buzzer">Buzzer</a></li>
-                
-                <li class="third-level"><a href="#other-info">Other Info</a></li>
-            <li class="second-level"><a href="#speaker">Speaker</a></li>
+        <li class="first-level active"><a href="#sound-based-input-bits">Sound-Based Input Bits</a></li>
+            <li class="second-level"><a href="#delay">Delay</a></li>
                 
                 <li class="third-level"><a href="#how-to-use">How to Use</a></li>
-            <li class="second-level"><a href="#led">LED</a></li>
-                
-                <li class="third-level"><a href="#other-info_1">Other Info</a></li>
-            <li class="second-level"><a href="#long-led">Long LED</a></li>
-                
-            <li class="second-level"><a href="#bright-led">Bright LED</a></li>
-                
-            <li class="second-level"><a href="#uv-led">UV LED</a></li>
-                
-            <li class="second-level"><a href="#ir-led">IR LED</a></li>
-                
-                <li class="third-level"><a href="#other-info_2">Other Info</a></li>
-            <li class="second-level"><a href="#rgb-led">RGB LED</a></li>
+            <li class="second-level"><a href="#envelope">Envelope</a></li>
                 
                 <li class="third-level"><a href="#how-to-use_1">How to Use</a></li>
+            <li class="second-level"><a href="#keyboard">Keyboard</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_2">How to Use</a></li>
+                <li class="third-level"><a href="#other-info">Other Info</a></li>
+            <li class="second-level"><a href="#microphone">Microphone</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_3">How to Use</a></li>
+            <li class="second-level"><a href="#mix">Mix</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_4">How to Use</a></li>
+            <li class="second-level"><a href="#mp3-player">MP3 Player</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_5">How to Use</a></li>
+            <li class="second-level"><a href="#oscillator">Oscillator</a></li>
+                
+            <li class="second-level"><a href="#how-to-use_6">How to Use</a></li>
+                
+            <li class="second-level"><a href="#random">Random</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_7">How to Use</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="output-bits-lights-and-sound">Output Bits (Lights and Sound)</h1>
-<p>These are the bits that output something, whether it be a light, some type of signal, a sound, or something else.</p>
-<p>These bits actually do the work, as with just <a href="/placeholder">input</a> and <a href="/placeholder">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
-<p>All of these bits also pass electricity along, so connecting another bit to the end of an output will continue your device. This means you can have as many <a href="#buzzer">buzzers</a>, <a href="#speaker">speakers</a>, and other noise making bits as you want! (Though we advise against this.)</p>
-<p>This section is all about the bits that produce lights and sound</p>
-<h2 id="buzzer">Buzzer</h2>
-<p><img alt="Buzzer Bit" src="https://i.shgcdn.com/247e8613-ec06-4d14-9858-55bd44c88ebe/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit creates a buzzing sound when recieving power. It's very simple as it can't be controlled too much and has a very simple use.</p>
-<h3 id="other-info">Other Info</h3>
-<ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the volume of the buzz.</li>
-</ul>
-<h2 id="speaker">Speaker</h2>
-<p><img alt="Speaker Bit" src="https://i.shgcdn.com/81d28baf-e336-43f2-b7cb-9a0c3cee2165/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The speaker bit, also known as the synth speaker, produces sound when given an input from a sound producing bit</p>
+<h1 id="sound-based-input-bits">Sound-Based Input Bits</h1>
+<p>These are the bits that modify the signal passing through your circuit. This changes the output of <a href="/output-ls">output</a> bits.</p>
+<p>This set of bits can really make your device unique, and helps to define the purpose of what you're building.</p>
+<p>Many of these bits may sound confusing at first, but if you try them out for a little bit, we're sure you'll get the hang of them.</p>
+<p>This set of bits generates or modifies tunes or sound.</p>
+<h2 id="delay">Delay</h2>
+<p><img alt="Delay Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/9ZxKWVaQ_2048x.jpeg?v=1571439466" /></p>
+<p>The delay bit repeats audio that is given to it depending on a certain time and feedback.</p>
 <h3 id="how-to-use">How to Use</h3>
-<p>The speaker bit doesn't just produce sound when given power, it requires an <a href="/placeholder">input</a> bit to know what sound to produce.</p>
-<p>Instructions:</p>
-<ol>
-<li>Connect a sound producing input bit to the power bit. (ex. <a href="/placeholder">oscillator</a>, <a href="/placeholder">MP3 Player</a>, <a href="/placeholder">keyboard</a>)</li>
-<li>Connect the speaker to the input bit.</li>
-<li>Tune the input bit and the speaker's volume as needed, then turn on the power and the synth speaker will start playing the tune.</li>
-</ol>
-<h2 id="led">LED</h2>
-<p><img alt="LED Bit" src="https://i.pinimg.com/originals/1a/c9/0c/1ac90c53588f45e317c4865428f3ded2.jpg" /></p>
-<p>This bit will light up green when it recieves power. Like the <a href="#buzzer">buzzer</a>, it also is very simple.</p>
-<h3 id="other-info_1">Other Info</h3>
-<ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the intensity of the LED type bits.</li>
-<li>The <a href="/placeholder">light sensor</a> bit can be activated by any bit that produces light, including all LED type bits.</li>
-</ul>
-<h2 id="long-led">Long LED</h2>
-<p><img alt="Long LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/1Sz0Vs-w.jpeg?v=1571439466" /></p>
-<p>This bit is almost exactly the same as the normal <a href="#led">LED</a> bit, but has a few key differences.</p>
-<p>Those differences are:</p>
-<ul>
-<li>Outputs a bluish-white light instead of a bright green one.</li>
-<li>As seen in the picture above, the LED is extended from the main electronic by a wire.</li>
-</ul>
-<h2 id="bright-led">Bright LED</h2>
-<p><img alt="Bright LED Bit" src="https://www.stemfinity.com/image/cache/data/LittleBits/littleBits-Bright-LED-Module-1-500x554.jpg" /></p>
-<p>The Bright LED is exactly the same as the normal <a href="#led">LED</a> bit, but is much brighter and is colored white instead of green.</p>
-<h2 id="uv-led">UV LED</h2>
-<p><img alt="UV LED Bit" src="https://i.shgcdn.com/fb839f6c-13af-437e-a7b1-f1507aef7bd4/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The UV LED is the same as the <a href="#long-led">long LED</a> bit, though it emits UV light instead of normal, visible light.</p>
-<h2 id="ir-led">IR LED</h2>
-<p><img alt="IR LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/O2ByM7FA_2048x.jpeg?v=1571439466" /></p>
-<p>The IR LED follows the same pattern as the <a href="#uv-led">UV LED</a> and <a href="#long-led">long LED</a> bits, but emits infrared (IR) light instead of UV or visible light.</p>
-<h3 id="other-info_2">Other Info</h3>
-<ul>
-<li>Because it emits IR light, it can be used to activate the <a href="/placeholder">remote trigger</a> bit.</li>
-</ul>
-<h2 id="rgb-led">RGB LED</h2>
-<p><img alt="RGB LED Bit" src="https://i.pinimg.com/originals/f6/60/ce/f660ce55e9c352dfd180190fe5dd3870.jpg" /></p>
-<p>The RGB LED uses three dials (slides on some models) to control three values (red, green, and blue), to reach the entire spectrum of visible color.</p>
+<p>This bit only works when given a sound with a bit like the <a href="#oscillator">oscillator</a> or the <a href="#keyboard">keyboard</a></p>
+<p>This bit has two knobs, time and feedback. The time knob controls the amount of time each sound and each silence lasts for. The feedback knob controls how many times the sound will repeat. If the feedback is turned up to the max, the sound will repeat forever.</p>
+<h2 id="envelope">Envelope</h2>
+<p><img alt="Envelope Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/yxg1ZcZw_2048x.jpeg?v=1580401247" /></p>
+<p>This bit is used to change the character of a sound to fit a certain instrument.</p>
 <h3 id="how-to-use_1">How to Use</h3>
-<p>As you can see in the picture, the RGB LED bit has three dials that can be turned with the purple littleBits screwdriver. Adjusting these dials will control the amount of red, green, and blue that the LED outputs.</p>
-<p>Some newer models, like the one pictured on the <a href="https://littlebits.com/products/rgb-led">littleBits website</a> have slides instead of screwdriver dials, which makes adjusting the values much easier. These newer models work no different than the original ones, and the way you control the values is the only thing that has changed.</p></div>
+<p>The two main settings, attack and decay, determine how long or short the sound sounds. The attack setting determines how long the sound takes to ramp up to max volume. Zero attack would mean that the sound is instantly at max volume.</p>
+<p>The decay setting determines how long the sound takes to go down to zero. A zero decay would mean the sound is instantly over after the sound stops coming.</p>
+<p>The third connection point at the top allows you to trigger the effect with another bit, like the <a href="#keyboard">keyboard</a>.</p>
+<h2 id="keyboard">Keyboard</h2>
+<p><img alt="Keyboard Bit" src="https://i.shgcdn.com/ac13b0bb-5d3b-4fa3-b604-1e3447c3c252/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>This bit is similar to an electronic keyboard, as it allows you to play specific notes with keys.</p>
+<h3 id="how-to-use_2">How to Use</h3>
+<p>The keyboard is similar to the <a href="#oscillator">oscillator</a>, in the way that it produces a tune. However, the keyboard has a similar layout to a piano, and plays specific notes rather than electronic tunes.</p>
+<p>Pressing a key will produce a tone, and that tone will come out depending on two key modes, hold and press. In press mode, the note will come out while a key is pressed, but not after. In hold mode, the last played note will continue to be played until the mode is changed or the power is cut.</p>
+<p>The octave slide on the left will change the octave, meaning that when the slide is down, the notes are lower, and when the slide is up, the notes are higher.</p>
+<p>You'll notice there are two output connections. The normal postitioned one will output the sound signal according to what you pressed, the top one will output a normal 5V power signal when a key is pressed. This power output will still adhere to the key mode the keyboard is on.</p>
+<h3 id="other-info">Other Info</h3>
+<p>This bit can be used in conjuction with the <a href="#oscillator">oscillator</a> to change the tune, pitch, and waveform of the notes.</p>
+<h2 id="microphone">Microphone</h2>
+<p><img alt="Microphone Bit" src="https://i.shgcdn.com/01e9f4ed-6d3a-42a8-bc27-573548bc6a07/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The microphone bit recieves audio from a seperate device or through it's microphone, and sends either sound or a 5V signal out after it.</p>
+<h3 id="how-to-use_3">How to Use</h3>
+<p>The microphone bit has two ways of inputting sound. The first is to simply play sound into the microphone. The second way is to connect an external device to the bit with a 3.5mm audio cable, and play music or sound on that device.</p>
+<p>When the microphone recieves sound in any way, it will then transmit that sound to the next bit in the device. However, the bit can change its mode from sound to other. In other mode, instead of sending a sound, it will send a simple 5V signal when a sound is recieved.</p>
+<h2 id="mix">Mix</h2>
+<p><img alt="Mix Bit" src="https://i.shgcdn.com/ba8c1df4-71e9-4a9f-a1f7-71298f93a45d/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The mix bit allows you to combine to sound inputs into one output.</p>
+<h3 id="how-to-use_4">How to Use</h3>
+<p>You can use something like an <a href="#oscillator">oscillator</a> to generate the tune for the bit. The two dials on the large portion of the bit control the volume of each input. </p>
+<h2 id="mp3-player">MP3 Player</h2>
+<p><img alt="MP3 Player Bit" src="https://i.shgcdn.com/fcfa6a25-66df-4c43-8a26-faae0f0cef79/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The MP3 player bit plays MP3 files off of a Micro-SD card inside the bit.</p>
+<h3 id="how-to-use_5">How to Use</h3>
+<p>To start, load all of your mp3 files onto a micro-sd card and add a number in the front according to the order you want tracks to be played (ex: "bigman.mp3" and "smallboy.mp3" turn into "1bigman.mp3" and "2smallboy.mp3").
+The numbers do not have to be in the front without spaces, just the first thing in the file's name.</p>
+<p>The mode switch on the side determines how the tracks will be played. In once mode, it will play the current track once. In loop mode, it will continuously loop through the whole SD card. In next mode, it will just play the next track, and in all mode, it will play the whole card through once.</p>
+<p>You can connect the bit to a speaker to play the music, or output it with the 3.5mm output jack.</p>
+<h2 id="oscillator">Oscillator</h2>
+<p><img alt="Oscillator Bit" src="https://i.shgcdn.com/613261c5-de38-4e25-8647-2cfafdc50719/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The oscillator bit can adjust or create a tone by changing its tune, pitch and waveform.</p>
+<h2 id="how-to-use_6">How to Use</h2>
+<p>The oscillator has three settings, tune, pitch, and waveform. The pitch dial is used to adjust the pitch of the bit. A higher value on the dial will mean a higher pitch. The waveform switch can switch between a square and sawtooth waveform, which both produce different sounds.</p>
+<p>You can attach the oscillator after a sound producing bit like the <a href="#keyboard">keyboard</a> to modify its sound. In this case, the tune slide actually does something, as it will modify the tune of the recieved sound. The pitch and waveform dials work the same when modifying sound.</p>
+<h2 id="random">Random</h2>
+<p><img alt="Random Bit" src="https://i.shgcdn.com/a6351e23-3cea-4958-b620-5d1c3774b93c/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The random bit can either send white noise or a random voltage each time a new signal is sent.</p>
+<h3 id="how-to-use_7">How to Use</h3>
+<p>The noise setting will just send white noise, while the random voltage will create a random voltage that can control the tune of an oscillator.</p>
+<p>You will need a <a href="/input-sw/#pulse">pulse</a> bit to keep generating new tunes, as the bit will only generate a new voltage on a new signal.</p></div>
         
         
     </div>

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A documentation for the Little Bits electronic components.">
     <meta name="author" content="Sean Maizel and Calum Dingwall">
-    <link rel="canonical" href="https://bitdocs.ml/output-ls/">
+    <link rel="canonical" href="https://bitdocs.ml/wire-i/">
     <link rel="../img/favicon.ico">
 
     
-    <title>Lights and Sound - BitDocs</title>
+    <title>Interfaces - BitDocs</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -148,8 +148,8 @@
 
         
             
-<li >
-    <a href="../wire-i/">Interfaces</a>
+<li class="active">
+    <a href="./">Interfaces</a>
 </li>
 
         
@@ -163,8 +163,8 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Lights and Sound</a>
+<li >
+    <a href="../output-ls/">Lights and Sound</a>
 </li>
 
         
@@ -197,17 +197,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../wire-i/">
+                        <a rel="prev" href="../wire/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../output-md/">
+                        <a rel="next" href="../output-ls/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/output-ls.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/wire-i.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -219,90 +219,73 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#output-bits-lights-and-sound">Output Bits (Lights and Sound)</a></li>
-            <li class="second-level"><a href="#buzzer">Buzzer</a></li>
-                
-                <li class="third-level"><a href="#other-info">Other Info</a></li>
-            <li class="second-level"><a href="#speaker">Speaker</a></li>
+        <li class="first-level active"><a href="#interfaces">Interfaces</a></li>
+            <li class="second-level"><a href="#makey-makey">Makey Makey</a></li>
                 
                 <li class="third-level"><a href="#how-to-use">How to Use</a></li>
-            <li class="second-level"><a href="#led">LED</a></li>
-                
-                <li class="third-level"><a href="#other-info_1">Other Info</a></li>
-            <li class="second-level"><a href="#long-led">Long LED</a></li>
-                
-            <li class="second-level"><a href="#bright-led">Bright LED</a></li>
-                
-            <li class="second-level"><a href="#uv-led">UV LED</a></li>
-                
-            <li class="second-level"><a href="#ir-led">IR LED</a></li>
-                
-                <li class="third-level"><a href="#other-info_2">Other Info</a></li>
-            <li class="second-level"><a href="#rgb-led">RGB LED</a></li>
+                <li class="third-level"><a href="#other-info">Other Info</a></li>
+            <li class="second-level"><a href="#arduino">Arduino</a></li>
                 
                 <li class="third-level"><a href="#how-to-use_1">How to Use</a></li>
+                <li class="third-level"><a href="#other-info_1">Other Info</a></li>
+            <li class="second-level"><a href="#cloudbit">CloudBit</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_2">How to Use</a></li>
+                <li class="third-level"><a href="#other-info_2">Other Info</a></li>
+            <li class="second-level"><a href="#usb-io">USB I/O</a></li>
+                
+                <li class="third-level"><a href="#how-to-use_3">How to Use</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="output-bits-lights-and-sound">Output Bits (Lights and Sound)</h1>
-<p>These are the bits that output something, whether it be a light, some type of signal, a sound, or something else.</p>
-<p>These bits actually do the work, as with just <a href="/placeholder">input</a> and <a href="/placeholder">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
-<p>All of these bits also pass electricity along, so connecting another bit to the end of an output will continue your device. This means you can have as many <a href="#buzzer">buzzers</a>, <a href="#speaker">speakers</a>, and other noise making bits as you want! (Though we advise against this.)</p>
-<p>This section is all about the bits that produce lights and sound</p>
-<h2 id="buzzer">Buzzer</h2>
-<p><img alt="Buzzer Bit" src="https://i.shgcdn.com/247e8613-ec06-4d14-9858-55bd44c88ebe/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit creates a buzzing sound when recieving power. It's very simple as it can't be controlled too much and has a very simple use.</p>
-<h3 id="other-info">Other Info</h3>
-<ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the volume of the buzz.</li>
-</ul>
-<h2 id="speaker">Speaker</h2>
-<p><img alt="Speaker Bit" src="https://i.shgcdn.com/81d28baf-e336-43f2-b7cb-9a0c3cee2165/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The speaker bit, also known as the synth speaker, produces sound when given an input from a sound producing bit</p>
+<h1 id="interfaces">Interfaces</h1>
+<p>These bits can interface with, or talk to, external computers and devices</p>
+<p><strong>NOTE: The official name for bits with an orange color is WIRE</strong></p>
+<h2 id="makey-makey">Makey Makey</h2>
+<p><img alt="Makey Makey bit" src="https://i.shgcdn.com/e3448365-77bb-456f-a008-b74966408e47/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>This bit has two functions:
+* It sends keystrokes over USB when a signal is sent to it.
+* It can send a signal, like a button, when it's contacts are shorted.</p>
 <h3 id="how-to-use">How to Use</h3>
-<p>The speaker bit doesn't just produce sound when given power, it requires an <a href="/placeholder">input</a> bit to know what sound to produce.</p>
-<p>Instructions:</p>
-<ol>
-<li>Connect a sound producing input bit to the power bit. (ex. <a href="/placeholder">oscillator</a>, <a href="/placeholder">MP3 Player</a>, <a href="/placeholder">keyboard</a>)</li>
-<li>Connect the speaker to the input bit.</li>
-<li>Tune the input bit and the speaker's volume as needed, then turn on the power and the synth speaker will start playing the tune.</li>
-</ol>
-<h2 id="led">LED</h2>
-<p><img alt="LED Bit" src="https://i.pinimg.com/originals/1a/c9/0c/1ac90c53588f45e317c4865428f3ded2.jpg" /></p>
-<p>This bit will light up green when it recieves power. Like the <a href="#buzzer">buzzer</a>, it also is very simple.</p>
-<h3 id="other-info_1">Other Info</h3>
 <ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the intensity of the LED type bits.</li>
-<li>The <a href="/placeholder">light sensor</a> bit can be activated by any bit that produces light, including all LED type bits.</li>
+<li>Either send a signal through one of its inputs, or short a key contact and the "Earth" contact by connecting them, to send the corresponding keystroke to a computer hooked up using a <a href="/placeholder">Micro-USB cable</a>.</li>
+<li>Short a contact and the "Earth" contact by connecting them to send an ON signal out tthe corresponding output.</li>
 </ul>
-<h2 id="long-led">Long LED</h2>
-<p><img alt="Long LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/1Sz0Vs-w.jpeg?v=1571439466" /></p>
-<p>This bit is almost exactly the same as the normal <a href="#led">LED</a> bit, but has a few key differences.</p>
-<p>Those differences are:</p>
-<ul>
-<li>Outputs a bluish-white light instead of a bright green one.</li>
-<li>As seen in the picture above, the LED is extended from the main electronic by a wire.</li>
-</ul>
-<h2 id="bright-led">Bright LED</h2>
-<p><img alt="Bright LED Bit" src="https://www.stemfinity.com/image/cache/data/LittleBits/littleBits-Bright-LED-Module-1-500x554.jpg" /></p>
-<p>The Bright LED is exactly the same as the normal <a href="#led">LED</a> bit, but is much brighter and is colored white instead of green.</p>
-<h2 id="uv-led">UV LED</h2>
-<p><img alt="UV LED Bit" src="https://i.shgcdn.com/fb839f6c-13af-437e-a7b1-f1507aef7bd4/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The UV LED is the same as the <a href="#long-led">long LED</a> bit, though it emits UV light instead of normal, visible light.</p>
-<h2 id="ir-led">IR LED</h2>
-<p><img alt="IR LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/O2ByM7FA_2048x.jpeg?v=1571439466" /></p>
-<p>The IR LED follows the same pattern as the <a href="#uv-led">UV LED</a> and <a href="#long-led">long LED</a> bits, but emits infrared (IR) light instead of UV or visible light.</p>
-<h3 id="other-info_2">Other Info</h3>
-<ul>
-<li>Because it emits IR light, it can be used to activate the <a href="/placeholder">remote trigger</a> bit.</li>
-</ul>
-<h2 id="rgb-led">RGB LED</h2>
-<p><img alt="RGB LED Bit" src="https://i.pinimg.com/originals/f6/60/ce/f660ce55e9c352dfd180190fe5dd3870.jpg" /></p>
-<p>The RGB LED uses three dials (slides on some models) to control three values (red, green, and blue), to reach the entire spectrum of visible color.</p>
+<h3 id="other-info">Other Info</h3>
+<p>For more info, check out the <a href="https://makeymakey.com/pages/how-to">Makey Makey website</a>.</p>
+<h2 id="arduino">Arduino</h2>
+<p><img alt="Arduino bit" src="https://i.shgcdn.com/a3d0b79e-fd5a-40eb-b2f3-e99019e9a540/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>It is a tiny computer called a microcontroller. It allows you to add programming to your circuits. It can recieve inputs and send outputs, and you can program any function into it. The code on the bit tells it what to do. There are three inputs, and three outputs, so you can program advanced hardware interactions or communicate with software.</p>
 <h3 id="how-to-use_1">How to Use</h3>
-<p>As you can see in the picture, the RGB LED bit has three dials that can be turned with the purple littleBits screwdriver. Adjusting these dials will control the amount of red, green, and blue that the LED outputs.</p>
-<p>Some newer models, like the one pictured on the <a href="https://littlebits.com/products/rgb-led">littleBits website</a> have slides instead of screwdriver dials, which makes adjusting the values much easier. These newer models work no different than the original ones, and the way you control the values is the only thing that has changed.</p></div>
+<p>To load code onto the bit, connect it to your computer with a <a href="/placeholder">Micro-USB cable</a>. Once you’ve loaded the code, it will stay on the bit, even if you disconnect it from the computer. If you leave it connected, you can also use it to send messages between your circuit and your computer. </p>
+<h3 id="other-info_1">Other Info</h3>
+<p>To learn more about how to use the Arduino Bit, check out our Arduino resources page <a href="http://discuss.littlebits.cc/t/getting-started-with-arduino/109">here</a>.</p>
+<h2 id="cloudbit">CloudBit</h2>
+<p><img alt="CloudBit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/Cloud_1LR_720x.jpg?v=1571439465" /></p>
+<p><strong>NOTE: As of currently, the CloudBit is discontinued and the CloudBit software service is down for maintenance.</strong></p>
+<p>This bit provides an easy way to create IoT devices, using the Internet of Things. When it recieves an input, it can send it out to the internet. It can also recieve a signal from the internet and output it into your circuit.</p>
+<h3 id="how-to-use_2">How to Use</h3>
+<p>There are three ways to interact with the bit:
+* The <a href="https://control.littlebitscloud.cc">littleBits Cloud Control</a>
+* <a href="https://ifttt.com/littlebits">IFTTT (If This Then That)</a>
+* The <a href="https://developers.littlebitscloud.cc">littleBits API</a></p>
+<h3 id="other-info_2">Other Info</h3>
+<p>There are a few places to help get started:
+* <a href="https://auth.littlebits.com/cloudstart">CloudBit Getting Started Guide</a>
+* <a href="https://discuss.littlebits.cc/t/getting-started-with-the-cloudbit/22483">Cloud Control Getting Started Guide</a>
+* <a href="https://gist.github.com/daniellevass/67a13943be883e88df39">CloudBit API Guide</a></p>
+<h2 id="usb-io">USB I/O</h2>
+<p><img alt="USB I/O bit" src="https://i.shgcdn.com/6412f611-418c-4bb3-adba-ef5ebd5d297f/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>This bit allows you send and receive digital audio and control voltages to and from a computer. When used in conjunction with a Digital Audio Workstation (DAW), you can record your sounds directly into a computer. You can also send audio from a computer to the littleBits  to manipulate it.</p>
+<h3 id="how-to-use_3">How to Use</h3>
+<p>It connects to a computer using a <a href="/placeholder">Micro-USB cable</a>.
+You can use it for:</p>
+<ul>
+<li>Sending and receiving control voltages allows you to use software programs like Max, PD, and CV Toolkit with the bit to control other bits.</li>
+<li>Using bits to create hardware controls for your software.</li>
+</ul>
+<p>It will appear to your computer as an audio interface and its input and output routing can be selected as with any other audio interface. The bit can only be selected as either an input or output device at a given time but multiple of these bits can be used at once.</p></div>
         
         
     </div>

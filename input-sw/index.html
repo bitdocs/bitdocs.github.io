@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A documentation for the Little Bits electronic components.">
     <meta name="author" content="Sean Maizel and Calum Dingwall">
-    <link rel="canonical" href="https://bitdocs.ml/output-ls/">
+    <link rel="canonical" href="https://bitdocs.ml/input-sw/">
     <link rel="../img/favicon.ico">
 
     
-    <title>Lights and Sound - BitDocs</title>
+    <title>Switches - BitDocs</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -115,8 +115,8 @@
 
         
             
-<li >
-    <a href="../input-sw/">Switches</a>
+<li class="active">
+    <a href="./">Switches</a>
 </li>
 
         
@@ -163,8 +163,8 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Lights and Sound</a>
+<li >
+    <a href="../output-ls/">Lights and Sound</a>
 </li>
 
         
@@ -197,17 +197,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../wire-i/">
+                        <a rel="prev" href="../input-so/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../output-md/">
+                        <a rel="next" href="../input-se/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/output-ls.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/bitdocs/bitdocs-code/edit/master/docs/input-sw.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -219,90 +219,66 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#output-bits-lights-and-sound">Output Bits (Lights and Sound)</a></li>
-            <li class="second-level"><a href="#buzzer">Buzzer</a></li>
+        <li class="first-level active"><a href="#switch-input-bits">Switch Input Bits</a></li>
+            <li class="second-level"><a href="#button">Button</a></li>
                 
-                <li class="third-level"><a href="#other-info">Other Info</a></li>
-            <li class="second-level"><a href="#speaker">Speaker</a></li>
+            <li class="second-level"><a href="#dimmer">Dimmer</a></li>
+                
+            <li class="second-level"><a href="#pulse">Pulse</a></li>
+                
+            <li class="second-level"><a href="#roller-switch">Roller Switch</a></li>
+                
+            <li class="second-level"><a href="#sequencer">Sequencer</a></li>
                 
                 <li class="third-level"><a href="#how-to-use">How to Use</a></li>
-            <li class="second-level"><a href="#led">LED</a></li>
+            <li class="second-level"><a href="#slide-dimmer">Slide Dimmer</a></li>
                 
-                <li class="third-level"><a href="#other-info_1">Other Info</a></li>
-            <li class="second-level"><a href="#long-led">Long LED</a></li>
+            <li class="second-level"><a href="#slide-switch">Slide Switch</a></li>
                 
-            <li class="second-level"><a href="#bright-led">Bright LED</a></li>
+            <li class="second-level"><a href="#timeout">Timeout</a></li>
                 
-            <li class="second-level"><a href="#uv-led">UV LED</a></li>
+            <li class="second-level"><a href="#toggle-switch">Toggle Switch</a></li>
                 
-            <li class="second-level"><a href="#ir-led">IR LED</a></li>
-                
-                <li class="third-level"><a href="#other-info_2">Other Info</a></li>
-            <li class="second-level"><a href="#rgb-led">RGB LED</a></li>
-                
-                <li class="third-level"><a href="#how-to-use_1">How to Use</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="output-bits-lights-and-sound">Output Bits (Lights and Sound)</h1>
-<p>These are the bits that output something, whether it be a light, some type of signal, a sound, or something else.</p>
-<p>These bits actually do the work, as with just <a href="/placeholder">input</a> and <a href="/placeholder">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
-<p>All of these bits also pass electricity along, so connecting another bit to the end of an output will continue your device. This means you can have as many <a href="#buzzer">buzzers</a>, <a href="#speaker">speakers</a>, and other noise making bits as you want! (Though we advise against this.)</p>
-<p>This section is all about the bits that produce lights and sound</p>
-<h2 id="buzzer">Buzzer</h2>
-<p><img alt="Buzzer Bit" src="https://i.shgcdn.com/247e8613-ec06-4d14-9858-55bd44c88ebe/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit creates a buzzing sound when recieving power. It's very simple as it can't be controlled too much and has a very simple use.</p>
-<h3 id="other-info">Other Info</h3>
-<ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the volume of the buzz.</li>
-</ul>
-<h2 id="speaker">Speaker</h2>
-<p><img alt="Speaker Bit" src="https://i.shgcdn.com/81d28baf-e336-43f2-b7cb-9a0c3cee2165/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The speaker bit, also known as the synth speaker, produces sound when given an input from a sound producing bit</p>
+<h1 id="switch-input-bits">Switch Input Bits</h1>
+<p>These are the bits that modify the signal passing through your circuit. This changes the output of <a href="/output-ls">output</a> bits.</p>
+<p>This set of bits can really make your device unique, and helps to define the purpose of what you're building.</p>
+<p>Many of these bits may sound confusing at first, but if you try them out for a little bit, we're sure you'll get the hang of them.</p>
+<p>These bits switch other bits on and off.</p>
+<h2 id="button">Button</h2>
+<p><img alt="Button Bit" src="https://i.shgcdn.com/2413271a-cdce-4bab-aeb2-91b2ed6f6522/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>When the button is pressed, it sends an ON signal. When it is not pressed, it sends an OFF signal.</p>
+<h2 id="dimmer">Dimmer</h2>
+<p><img alt="Dimmer Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/ua9EofWg_720x.jpeg?v=1571439466" /></p>
+<p>The dimmer bit limits the amount of power that goes through it, thus reducing the intensity of things like <a href="/output-ls">lights</a> and <a href="/output-ls/#buzzer">buzzers</a>.</p>
+<p>The more you turn the dimmer counter-clockwise, the less power there is, until there is no power going through at all. This can also be used to control the motion of the <a href="/output-md/#servo">servo</a> in TURN mode.</p>
+<h2 id="pulse">Pulse</h2>
+<p><img alt="Pulse Bit" src="https://i.shgcdn.com/dec22683-4e1f-495e-a5e2-537823d308d2/-/format/auto/-/preview/3000x3000/-/quality/lighter/0" /></p>
+<p>The pulse bit sends power out at a consistent and specific rate that is determined by the slider on the bottom of the bit.</p>
+<h2 id="roller-switch">Roller Switch</h2>
+<p><img alt="Roller Switch Bit" src="https://i.shgcdn.com/9f008c63-5ed7-4661-b84c-389a26757ee8/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The roller switch works like the <a href="#button">button</a>, as when you click the switch, power is let through. However, you can also invert this, by making the power turn off when the top-left switch is set to open.</p>
+<h2 id="sequencer">Sequencer</h2>
+<p><img alt="Sequencer Bit" src="https://i.shgcdn.com/a289d9e0-2791-40da-9275-e019bd05d14f/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The sequencer can activate up to 8 different outputs in a certain order.</p>
 <h3 id="how-to-use">How to Use</h3>
-<p>The speaker bit doesn't just produce sound when given power, it requires an <a href="/placeholder">input</a> bit to know what sound to produce.</p>
-<p>Instructions:</p>
-<ol>
-<li>Connect a sound producing input bit to the power bit. (ex. <a href="/placeholder">oscillator</a>, <a href="/placeholder">MP3 Player</a>, <a href="/placeholder">keyboard</a>)</li>
-<li>Connect the speaker to the input bit.</li>
-<li>Tune the input bit and the speaker's volume as needed, then turn on the power and the synth speaker will start playing the tune.</li>
-</ol>
-<h2 id="led">LED</h2>
-<p><img alt="LED Bit" src="https://i.pinimg.com/originals/1a/c9/0c/1ac90c53588f45e317c4865428f3ded2.jpg" /></p>
-<p>This bit will light up green when it recieves power. Like the <a href="#buzzer">buzzer</a>, it also is very simple.</p>
-<h3 id="other-info_1">Other Info</h3>
-<ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the intensity of the LED type bits.</li>
-<li>The <a href="/placeholder">light sensor</a> bit can be activated by any bit that produces light, including all LED type bits.</li>
-</ul>
-<h2 id="long-led">Long LED</h2>
-<p><img alt="Long LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/1Sz0Vs-w.jpeg?v=1571439466" /></p>
-<p>This bit is almost exactly the same as the normal <a href="#led">LED</a> bit, but has a few key differences.</p>
-<p>Those differences are:</p>
-<ul>
-<li>Outputs a bluish-white light instead of a bright green one.</li>
-<li>As seen in the picture above, the LED is extended from the main electronic by a wire.</li>
-</ul>
-<h2 id="bright-led">Bright LED</h2>
-<p><img alt="Bright LED Bit" src="https://www.stemfinity.com/image/cache/data/LittleBits/littleBits-Bright-LED-Module-1-500x554.jpg" /></p>
-<p>The Bright LED is exactly the same as the normal <a href="#led">LED</a> bit, but is much brighter and is colored white instead of green.</p>
-<h2 id="uv-led">UV LED</h2>
-<p><img alt="UV LED Bit" src="https://i.shgcdn.com/fb839f6c-13af-437e-a7b1-f1507aef7bd4/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The UV LED is the same as the <a href="#long-led">long LED</a> bit, though it emits UV light instead of normal, visible light.</p>
-<h2 id="ir-led">IR LED</h2>
-<p><img alt="IR LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/O2ByM7FA_2048x.jpeg?v=1571439466" /></p>
-<p>The IR LED follows the same pattern as the <a href="#uv-led">UV LED</a> and <a href="#long-led">long LED</a> bits, but emits infrared (IR) light instead of UV or visible light.</p>
-<h3 id="other-info_2">Other Info</h3>
-<ul>
-<li>Because it emits IR light, it can be used to activate the <a href="/placeholder">remote trigger</a> bit.</li>
-</ul>
-<h2 id="rgb-led">RGB LED</h2>
-<p><img alt="RGB LED Bit" src="https://i.pinimg.com/originals/f6/60/ce/f660ce55e9c352dfd180190fe5dd3870.jpg" /></p>
-<p>The RGB LED uses three dials (slides on some models) to control three values (red, green, and blue), to reach the entire spectrum of visible color.</p>
-<h3 id="how-to-use_1">How to Use</h3>
-<p>As you can see in the picture, the RGB LED bit has three dials that can be turned with the purple littleBits screwdriver. Adjusting these dials will control the amount of red, green, and blue that the LED outputs.</p>
-<p>Some newer models, like the one pictured on the <a href="https://littlebits.com/products/rgb-led">littleBits website</a> have slides instead of screwdriver dials, which makes adjusting the values much easier. These newer models work no different than the original ones, and the way you control the values is the only thing that has changed.</p></div>
+<p>The sequencer bit has two settings. The dial in the middle determines how the sequence is progressed. Forward will go 1-8, backwards will go 8-1, pendulum will go 1-8, then 8-1, like a pendulum, and random will simply turn on a random output.</p>
+<p>The switch on the side determines how fast the sequence is progressed. In step mode, the next output is activated whenever a new pulse is recieved. You should use this setting with a <a href="#pulse">pulse</a> bit to control the speed of the sequence. When the setting is on speed, it will progress based on the voltage. The voltage can be controlled with a <a href="#dimmer">dimmer</a>.</p>
+<h2 id="slide-dimmer">Slide Dimmer</h2>
+<p><img alt="Slide Dimmer Bit" src="https://i.shgcdn.com/9e565834-262d-40ef-b7f4-fdbe5c9fbb64/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The slide dimmer works like a normal <a href="#dimmer">dimmer</a>, but uses a slide instead of a dial to adjust voltage.</p>
+<h2 id="slide-switch">Slide Switch</h2>
+<p><img alt="Slide Switch Bit" src="https://i.shgcdn.com/bd3f664a-85d8-438d-b4f2-e24a7a48b1bb/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The slide switch lets power through when set to ON, but doesn't when set to OFF.</p>
+<h2 id="timeout">Timeout</h2>
+<p><img alt="Timeout Bit" src="https://i.shgcdn.com/c7540760-50d5-4a7d-834a-2a546c801d4a/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The timeout bit sets a timer when it recieves an ON signal, and changes its output once the timer has run out. The screwdriver dial is used to adjust the length of the timer. The switch can change the mode from on-off (will send an ON signal until timer runs out) to off-on (will send an OFF singal until timer runs out), and vice versa.</p>
+<h2 id="toggle-switch">Toggle Switch</h2>
+<p><img alt="Toggle Switch Bit" src="https://i.shgcdn.com/6802cdb0-d85d-4346-925a-14a22ce864ca/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
+<p>The toggle switch works like the <a href="#slide-switch">slide switch</a>, but uses a lever instead of a slider.</p></div>
         
         
     </div>
