@@ -14,16 +14,14 @@
     <title>Lights and Sound - BitDocs</title>
     
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="../css/base.min.css" rel="stylesheet">
     <link href="../css/cinder.min.css" rel="stylesheet">
-
-    
+    <link href="../css/highlight.min.css" rel="stylesheet">
     <link href="../css/colors.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +29,15 @@
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
     
 
@@ -184,7 +191,7 @@
                 
                 
                     <li >
-                        <a href="../examples/">Examples</a>
+                        <a href="https://inventtolearn.com/littlebitsall.pdf">Examples</a>
                     </li>
                 
                 
@@ -247,7 +254,7 @@
 
 <h1 id="output-bits-lights-and-sound">Output Bits (Lights and Sound)</h1>
 <p>These are the bits that output something, whether it be a light, some type of signal, a sound, or something else.</p>
-<p>These bits actually do the work, as with just <a href="/placeholder">input</a> and <a href="/placeholder">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
+<p>These bits actually do the work, as with just <a href="/input-so">input</a> and <a href="/wire-dl">logic</a> bits, nothing will happen, so you need an output bit for your device to function.</p>
 <p>All of these bits also pass electricity along, so connecting another bit to the end of an output will continue your device. This means you can have as many <a href="#buzzer">buzzers</a>, <a href="#speaker">speakers</a>, and other noise making bits as you want! (Though we advise against this.)</p>
 <p>This section is all about the bits that produce lights and sound</p>
 <h2 id="buzzer">Buzzer</h2>
@@ -255,26 +262,26 @@
 <p>This bit creates a buzzing sound when recieving power. It's very simple as it can't be controlled too much and has a very simple use.</p>
 <h3 id="other-info">Other Info</h3>
 <ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the volume of the buzz.</li>
+<li>You can use the <a href="/input-sw/#dimmer">dimmer</a> or <a href="/input-sw/#slide-dimmer">slide dimmer</a> bits to control the volume of the buzz.</li>
 </ul>
 <h2 id="speaker">Speaker</h2>
 <p><img alt="Speaker Bit" src="https://i.shgcdn.com/81d28baf-e336-43f2-b7cb-9a0c3cee2165/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
 <p>The speaker bit, also known as the synth speaker, produces sound when given an input from a sound producing bit</p>
 <h3 id="how-to-use">How to Use</h3>
-<p>The speaker bit doesn't just produce sound when given power, it requires an <a href="/placeholder">input</a> bit to know what sound to produce.</p>
+<p>The speaker bit doesn't just produce sound when given power, it requires an <a href="/input-so">input</a> bit to know what sound to produce.</p>
 <p>Instructions:</p>
 <ol>
-<li>Connect a sound producing input bit to the power bit. (ex. <a href="/placeholder">oscillator</a>, <a href="/placeholder">MP3 Player</a>, <a href="/placeholder">keyboard</a>)</li>
+<li>Connect a sound producing input bit to the power bit. (ex. <a href="/input-so/#oscillator">oscillator</a>, <a href="/input-so/#mp3-player">MP3 Player</a>, <a href="/input-so/#keyboard">keyboard</a>)</li>
 <li>Connect the speaker to the input bit.</li>
 <li>Tune the input bit and the speaker's volume as needed, then turn on the power and the synth speaker will start playing the tune.</li>
 </ol>
 <h2 id="led">LED</h2>
 <p><img alt="LED Bit" src="https://i.pinimg.com/originals/1a/c9/0c/1ac90c53588f45e317c4865428f3ded2.jpg" /></p>
-<p>This bit will light up green when it recieves power. Like the <a href="#buzzer">buzzer</a>, it also is very simple.</p>
+<p>This bit will light up green when it recieves power.</p>
 <h3 id="other-info_1">Other Info</h3>
 <ul>
-<li>You can use the <a href="/placeholder">dimmer</a> or <a href="/placeholder">slide dimmer</a> bits to control the intensity of the LED type bits.</li>
-<li>The <a href="/placeholder">light sensor</a> bit can be activated by any bit that produces light, including all LED type bits.</li>
+<li>You can use the <a href="/input-sw/#dimmer">dimmer</a> or <a href="/input-sw/#slide-dimmer">slide dimmer</a> bits to control the intensity of the LED bits.</li>
+<li>The <a href="/input-se/#light-sensor">light sensor</a> bit can be activated by any bit that produces light, including all LED bits.</li>
 </ul>
 <h2 id="long-led">Long LED</h2>
 <p><img alt="Long LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/1Sz0Vs-w.jpeg?v=1571439466" /></p>
@@ -289,20 +296,20 @@
 <p>The Bright LED is exactly the same as the normal <a href="#led">LED</a> bit, but is much brighter and is colored white instead of green.</p>
 <h2 id="uv-led">UV LED</h2>
 <p><img alt="UV LED Bit" src="https://i.shgcdn.com/fb839f6c-13af-437e-a7b1-f1507aef7bd4/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The UV LED is the same as the <a href="#long-led">long LED</a> bit, though it emits UV light instead of normal, visible light.</p>
+<p>The UV LED is the same as the <a href="#long-led">long LED</a> bit, though it emits ultraviolet (UV) light instead of normal, visible light.</p>
 <h2 id="ir-led">IR LED</h2>
 <p><img alt="IR LED Bit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/O2ByM7FA_2048x.jpeg?v=1571439466" /></p>
 <p>The IR LED follows the same pattern as the <a href="#uv-led">UV LED</a> and <a href="#long-led">long LED</a> bits, but emits infrared (IR) light instead of UV or visible light.</p>
 <h3 id="other-info_2">Other Info</h3>
 <ul>
-<li>Because it emits IR light, it can be used to activate the <a href="/placeholder">remote trigger</a> bit.</li>
+<li>Because it emits IR light, it can be used to activate the <a href="/input-se/#remote-trigger">remote trigger</a> bit.</li>
 </ul>
 <h2 id="rgb-led">RGB LED</h2>
 <p><img alt="RGB LED Bit" src="https://i.pinimg.com/originals/f6/60/ce/f660ce55e9c352dfd180190fe5dd3870.jpg" /></p>
 <p>The RGB LED uses three dials (slides on some models) to control three values (red, green, and blue), to reach the entire spectrum of visible color.</p>
 <h3 id="how-to-use_1">How to Use</h3>
 <p>As you can see in the picture, the RGB LED bit has three dials that can be turned with the purple littleBits screwdriver. Adjusting these dials will control the amount of red, green, and blue that the LED outputs.</p>
-<p>Some newer models, like the one pictured on the <a href="https://littlebits.com/products/rgb-led">littleBits website</a> have slides instead of screwdriver dials, which makes adjusting the values much easier. These newer models work no different than the original ones, and the way you control the values is the only thing that has changed.</p></div>
+<p><strong>NOTE: Some newer models, like the one pictured on the <a href="https://littlebits.com/products/rgb-led">littleBits website</a> have slides instead of screwdriver dials, which makes adjusting the values much easier. These newer models work no different than the original ones, and the way you control the values is the only thing that has changed.</strong></p></div>
         
         
     </div>
@@ -311,17 +318,17 @@
         
         <hr>
         <p>
-        <small>Made by Sean Maizel and Calum Dingwall</small><br>
+        <small>Made by Sean Maizel and Calum Dingwall<br></small>
         
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
-    
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
@@ -331,11 +338,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>

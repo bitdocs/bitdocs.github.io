@@ -14,16 +14,14 @@
     <title>Sensors - BitDocs</title>
     
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="../css/base.min.css" rel="stylesheet">
     <link href="../css/cinder.min.css" rel="stylesheet">
-
-    
+    <link href="../css/highlight.min.css" rel="stylesheet">
     <link href="../css/colors.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +29,15 @@
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
     
 
@@ -184,7 +191,7 @@
                 
                 
                     <li >
-                        <a href="../examples/">Examples</a>
+                        <a href="https://inventtolearn.com/littlebitsall.pdf">Examples</a>
                     </li>
                 
                 
@@ -253,7 +260,7 @@
 <h3 id="how-to-use">How to Use</h3>
 <p>While the <a href="/input-sw/#button">button</a> jumps instantly to 5V when pressed, the light sensor gradually works up to 5V as the light shined on it increases. The speed at which the light sensor gets to full power can be changed with the sensitivity slider.</p>
 <p>The light/dark mode switch will change in what ways the light sensor releases power. On light mode, the sensor will release power as light level goes up, but on dark mode, the sensor will release power as the light level goes down.</p>
-<p><strong>NOTE: Some older models may use a screwdriver dial instead of a slide for sensitivity. This works the same, however, you'll need to use the purple <a href="/placeholder">screwdriver</a> to change the sensitivity setting</strong></p>
+<p><strong>NOTE: Some older models may use a screwdriver dial instead of a slide for sensitivity. This works the same, however, you'll need to use the purple screwdriver to change the sensitivity setting</strong></p>
 <h2 id="motion-trigger">Motion Trigger</h2>
 <p><img alt="Motion Trigger Bit" src="https://i.shgcdn.com/6a256fe4-0415-4c81-ba84-10b830aa2cfc/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
 <p>The motion trigger bit works similarly to the <a href="/input-sw/#button">button</a>, though instead of sending a signal on a click, it sends a signal when it detects movement.</p>
@@ -267,7 +274,7 @@
 <p>This bit works similarly to the <a href="#light-sensor">light sensor</a>, but sends power based on how close an object is to the sensor.</p>
 <h2 id="remote-trigger">Remote Trigger</h2>
 <p><img alt="Remote Trigger Bit" src="https://i.shgcdn.com/09e71eb2-5187-4f93-a007-12b6ca6fc3e1/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>The remote trigger bit will send a signal when it recieves an IR signal. Things that can trigger this include your TV remote or the <a href="/placeholder">IR LED</a>.</p>
+<p>The remote trigger bit will send a signal when it recieves an IR signal. Things that can trigger this include your TV remote or the <a href="/output-ls/#ir-led">IR LED</a>.</p>
 <h2 id="sound-trigger">Sound Trigger</h2>
 <p><img alt="Sound Trigger Bit" src="https://i.shgcdn.com/1cd8f2b6-6710-4a94-b523-d211c69beb15/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
 <p>The sound trigger will send an ON signal when the sound in the room reaches a certain threshold. This threshold can be changed with the sensitivity slider.</p>
@@ -285,17 +292,17 @@
         
         <hr>
         <p>
-        <small>Made by Sean Maizel and Calum Dingwall</small><br>
+        <small>Made by Sean Maizel and Calum Dingwall<br></small>
         
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
-    
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
@@ -305,11 +312,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>

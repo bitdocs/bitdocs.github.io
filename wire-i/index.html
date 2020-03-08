@@ -14,16 +14,14 @@
     <title>Interfaces - BitDocs</title>
     
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
-    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="../css/base.min.css" rel="stylesheet">
     <link href="../css/cinder.min.css" rel="stylesheet">
-
-    
+    <link href="../css/highlight.min.css" rel="stylesheet">
     <link href="../css/colors.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,6 +29,15 @@
             <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
 
     
 
@@ -184,7 +191,7 @@
                 
                 
                     <li >
-                        <a href="../examples/">Examples</a>
+                        <a href="https://inventtolearn.com/littlebitsall.pdf">Examples</a>
                     </li>
                 
                 
@@ -244,13 +251,15 @@
 <p><strong>NOTE: The official name for bits with an orange color is WIRE</strong></p>
 <h2 id="makey-makey">Makey Makey</h2>
 <p><img alt="Makey Makey bit" src="https://i.shgcdn.com/e3448365-77bb-456f-a008-b74966408e47/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
-<p>This bit has two functions:
-* It sends keystrokes over USB when a signal is sent to it.
-* It can send a signal, like a button, when it's contacts are shorted.</p>
+<p>This bit has two functions:</p>
+<ul>
+<li>It sends keystrokes over USB when a signal is sent to it.</li>
+<li>It can send a signal, like a button, when it's contacts are shorted.</li>
+</ul>
 <h3 id="how-to-use">How to Use</h3>
 <ul>
-<li>Either send a signal through one of its inputs, or short a key contact and the "Earth" contact by connecting them, to send the corresponding keystroke to a computer hooked up using a <a href="/placeholder">Micro-USB cable</a>.</li>
-<li>Short a contact and the "Earth" contact by connecting them to send an ON signal out tthe corresponding output.</li>
+<li>Either send a signal through one of its inputs, or short a key contact and the "Earth" contact by connecting them, to send the corresponding keystroke to a computer hooked up using a Micro-USB cable.</li>
+<li>Short a contact and the "Earth" contact by connecting them to send an ON signal out the corresponding output.</li>
 </ul>
 <h3 id="other-info">Other Info</h3>
 <p>For more info, check out the <a href="https://makeymakey.com/pages/how-to">Makey Makey website</a>.</p>
@@ -258,28 +267,32 @@
 <p><img alt="Arduino bit" src="https://i.shgcdn.com/a3d0b79e-fd5a-40eb-b2f3-e99019e9a540/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
 <p>It is a tiny computer called a microcontroller. It allows you to add programming to your circuits. It can recieve inputs and send outputs, and you can program any function into it. The code on the bit tells it what to do. There are three inputs, and three outputs, so you can program advanced hardware interactions or communicate with software.</p>
 <h3 id="how-to-use_1">How to Use</h3>
-<p>To load code onto the bit, connect it to your computer with a <a href="/placeholder">Micro-USB cable</a>. Once you’ve loaded the code, it will stay on the bit, even if you disconnect it from the computer. If you leave it connected, you can also use it to send messages between your circuit and your computer. </p>
+<p>To load code onto the bit, connect it to your computer with a Micro-USB cable. Once you’ve loaded the code, it will stay on the bit, even if you disconnect it from the computer. If you leave it connected, you can also use it to send messages between your circuit and your computer. </p>
 <h3 id="other-info_1">Other Info</h3>
-<p>To learn more about how to use the Arduino Bit, check out our Arduino resources page <a href="http://discuss.littlebits.cc/t/getting-started-with-arduino/109">here</a>.</p>
+<p>To learn more about how to use the Arduino Bit, check out the Arduino resources page <a href="http://discuss.littlebits.cc/t/getting-started-with-arduino/109">here</a>.</p>
 <h2 id="cloudbit">CloudBit</h2>
 <p><img alt="CloudBit" src="https://cdn.shopify.com/s/files/1/1494/3290/products/Cloud_1LR_720x.jpg?v=1571439465" /></p>
 <p><strong>NOTE: As of currently, the CloudBit is discontinued and the CloudBit software service is down for maintenance.</strong></p>
 <p>This bit provides an easy way to create IoT devices, using the Internet of Things. When it recieves an input, it can send it out to the internet. It can also recieve a signal from the internet and output it into your circuit.</p>
 <h3 id="how-to-use_2">How to Use</h3>
-<p>There are three ways to interact with the bit:
-* The <a href="https://control.littlebitscloud.cc">littleBits Cloud Control</a>
-* <a href="https://ifttt.com/littlebits">IFTTT (If This Then That)</a>
-* The <a href="https://developers.littlebitscloud.cc">littleBits API</a></p>
+<p>There are three ways to interact with the bit:</p>
+<ul>
+<li>The <a href="https://control.littlebitscloud.cc">littleBits Cloud Control</a></li>
+<li><a href="https://ifttt.com/littlebits">IFTTT (If This Then That)</a></li>
+<li>The <a href="https://developers.littlebitscloud.cc">littleBits API</a></li>
+</ul>
 <h3 id="other-info_2">Other Info</h3>
-<p>There are a few places to help get started:
-* <a href="https://auth.littlebits.com/cloudstart">CloudBit Getting Started Guide</a>
-* <a href="https://discuss.littlebits.cc/t/getting-started-with-the-cloudbit/22483">Cloud Control Getting Started Guide</a>
-* <a href="https://gist.github.com/daniellevass/67a13943be883e88df39">CloudBit API Guide</a></p>
+<p>There are a few places to help get started:</p>
+<ul>
+<li><a href="https://auth.littlebits.com/cloudstart">CloudBit Getting Started Guide</a></li>
+<li><a href="https://discuss.littlebits.cc/t/getting-started-with-the-cloudbit/22483">Cloud Control Getting Started Guide</a></li>
+<li><a href="https://gist.github.com/daniellevass/67a13943be883e88df39">CloudBit API Guide</a></li>
+</ul>
 <h2 id="usb-io">USB I/O</h2>
 <p><img alt="USB I/O bit" src="https://i.shgcdn.com/6412f611-418c-4bb3-adba-ef5ebd5d297f/-/format/auto/-/preview/3000x3000/-/quality/lighter/" /></p>
 <p>This bit allows you send and receive digital audio and control voltages to and from a computer. When used in conjunction with a Digital Audio Workstation (DAW), you can record your sounds directly into a computer. You can also send audio from a computer to the littleBits  to manipulate it.</p>
 <h3 id="how-to-use_3">How to Use</h3>
-<p>It connects to a computer using a <a href="/placeholder">Micro-USB cable</a>.
+<p>It connects to a computer using a Micro-USB cable.
 You can use it for:</p>
 <ul>
 <li>Sending and receiving control voltages allows you to use software programs like Max, PD, and CV Toolkit with the bit to control other bits.</li>
@@ -294,17 +307,17 @@ You can use it for:</p>
         
         <hr>
         <p>
-        <small>Made by Sean Maizel and Calum Dingwall</small><br>
+        <small>Made by Sean Maizel and Calum Dingwall<br></small>
         
-        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-        </p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
 
         
         
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
-    
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script>var base_url = ".."</script>
     
     <script src="../js/base.js"></script>
@@ -314,11 +327,8 @@ You can use it for:</p>
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true">&times;</span>
-                    <span class="sr-only">Close</span>
-                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>
